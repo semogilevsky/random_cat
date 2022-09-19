@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - random_cat
+  theme:
+    - olivero
+id: randomcat
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: random_cat
+settings:
+  id: random_cat
+  label: 'Random cat'
+  label_display: visible
+  provider: random_cat
+visibility: {  }

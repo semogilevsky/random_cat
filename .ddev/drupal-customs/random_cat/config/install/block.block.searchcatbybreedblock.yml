@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - random_cat
+  theme:
+    - olivero
+id: searchcatbybreedblock
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: search_cat_by_breed
+settings:
+  id: search_cat_by_breed
+  label: 'Search cat by breed block'
+  label_display: visible
+  provider: random_cat
+visibility: {  }

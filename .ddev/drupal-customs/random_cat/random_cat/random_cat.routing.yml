@@ -1,0 +1,22 @@
+random_cat.get_url:
+  path: '/random_cat/get/{id}'
+  defaults:
+    _controller: '\Drupal\random_cat\Controller\RandomCatController::getCatImage'
+    id: ''
+  requirements:
+    _permission: 'access content'
+
+random_cat.vote:
+  path: '/random_cat/vote/{cat_id}/{value}'
+  defaults:
+    _controller: '\Drupal\random_cat\Controller\RandomCatController::vote'
+    id: ''
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      cat_id:
+        type: string
+      value:
+        type: integer
+

@@ -1,0 +1,11 @@
+<div>
+  <h3>{{ name }}</h3>
+
+  {% for id in image_ids %}
+    <img class="rc-search-result" data-image-id="{{ id }}" width="300" height="300" src="/core/misc/loading.gif" />
+  {% endfor %}
+
+  <p><strong>{{ 'Description'|t }}:</strong> {{ description }}</p>
+  <p><strong>{{ 'Temperament'|t }}:</strong> {{ temperament }}</p>
+  <div>{{ link('Read more on wikipedia'|t, wikipedia_url) }}</div>
+</div>

@@ -1,0 +1,22 @@
+<?php
+
+define("RC_API_KEY", "live_QM03RJBXwys5VJFlx2ykGsmEzmOr8oaoT3mbRH6VQmeideqiNIQp2089FYMDHgUo");
+define('RC_API_ENDPOINT', 'https://api.thecatapi.com/v1');
+
+/**
+ * Implements hook_theme().
+ */
+function random_cat_theme() {
+  return [
+    'cat_of_the_day_block' => [],
+    'cat_search_results' => [
+      'variables' => [
+        'name' => '',
+        'description' => '',
+        'temperament' => '',
+        'wikipedia_url' => '',
+        'image_ids' => '',
+      ],
+    ],
+  ];
+}
