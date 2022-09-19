@@ -1,4 +1,0 @@
-name: 'Random cat'
-type: module
-description: 'Display & search random cats'
-core_version_requirement: 9.x

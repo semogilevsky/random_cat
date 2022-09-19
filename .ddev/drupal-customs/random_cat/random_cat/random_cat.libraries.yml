@@ -1,6 +1,0 @@
-rabdom_cat.core:
-  js:
-    js/core.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupal
